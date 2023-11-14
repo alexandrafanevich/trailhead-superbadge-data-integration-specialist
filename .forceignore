@@ -1,0 +1,54 @@
+# List files or directories below to ignore them when running
+# force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+# git keep files
+**/.gitkeep
+
+# Standard Meta Data
+package.xml
+
+# These metadata files are ignored when promoting (deploying)
+**/appMenus/**
+**/appSwitcher/**
+**/fieldRestrictionRules/**
+**/objectTranslations/**
+**/profiles/**
+**/profilePasswordPolicy/**
+**/profileSessionSetting/**
+**/settings/**
+**/sharingRules/**
+**/AuthProvider/**
+
+# These metadata files are ignored when pulling (retrieving)
+*.settings
+*.appMenu
+*.appSwitcher
+*.rule
+# *.objectTranslation
+*.profile
+*.profilePasswordPolicy
+*.profileSessionSetting
+*.sharingRules
+*.AuthProvider
+
+# LWC
+**/jsconfig.json
+**/.eslintrc.json
+**/lwc/**/*.json
+
+# LWC Jest
+**/__test__/**
+**/__tests__/**
+**/*.test.js
+**/*.spec.js
+
+# SFDX Workaround backup files
+**/workflows/*.bac
+**/approvalProcesses/*.bac
+
+# ---------------------------------------------------------------
+# CSS / SCSS
+# ---------------------------------------------------------------
+**/*.scss
