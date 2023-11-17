@@ -46,8 +46,8 @@ node_modules/
 **/aura/.eslintrc.json
 **/lwc/.eslintrc.json
 
-# SOQL Query Results
-**/scripts/soql/query-results
+# Custom Scripts
+**/scripts/
 
 # ---------------------------------------------------------------
 # Visual Studio Code
